@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Lato-Regular',
         primarySwatch: Colors.green,
       ),
-      home: RiderRegisterPage(),
+      home: RiderLoginPage(),
     );
   }
 }

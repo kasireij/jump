@@ -20,12 +20,12 @@ class RiderLoginPage extends StatelessWidget {
                 SizedBox(
                   height: 70,
                 ),
-                /* Image(
+                Image(
                   alignment: Alignment.center,
                   height: 100.0,
                   width: 100.0,
-                  image: AssetImage('images/logo.png'),
-                ), */
+                  image: AssetImage('assets/logo.png'),
+                ),
                 SizedBox(
                   height: 40,
                 ),
@@ -92,7 +92,7 @@ class RiderLoginPage extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {},
-                    child: const Text('Don\'t have an account, sign up here')),
+                    child: const Text('Don\'t have an account? Sign up.')),
               ],
             ),
           ),
