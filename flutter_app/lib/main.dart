@@ -5,6 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/brand_colors.dart';
 import 'package:flutter_app/screens/riderloginpage.dart';
+import 'package:flutter_app/screens/riderregisterpage.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Lato-Regular',
         primarySwatch: Colors.green,
       ),
-      home: LoginPage(),
+      home: RiderRegisterPage(),
     );
   }
 }
