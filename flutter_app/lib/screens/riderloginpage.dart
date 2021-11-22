@@ -1,14 +1,15 @@
+// ignore_for_file: unnecessary_const
+
 import 'package:flutter/material.dart';
 import 'package:flutter_app/brand_colors.dart';
+import 'package:flutter_app/screens/riderregisterpage.dart';
 
 class RiderLoginPage extends StatelessWidget {
   const RiderLoginPage({Key? key}) : super(key: key);
+  static String route = "rider-login";
 
   @override
   Widget build(BuildContext context) {
-    /* final ButtonStyle style =
-        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
- */
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -17,19 +18,19 @@ class RiderLoginPage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 70,
                 ),
-                Image(
+                const Image(
                   alignment: Alignment.center,
                   height: 100.0,
                   width: 100.0,
                   image: AssetImage('assets/logo.png'),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
-                Text(
+                const Text(
                   "Sign in as a Rider",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -42,7 +43,7 @@ class RiderLoginPage extends StatelessWidget {
                   padding: const EdgeInsets.all(30.0),
                   child: Column(
                     children: [
-                      TextField(
+                      const TextField(
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                           labelText: 'Email Address',
@@ -56,10 +57,10 @@ class RiderLoginPage extends StatelessWidget {
                         ),
                         style: TextStyle(fontSize: 14),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      TextField(
+                      const TextField(
                         obscureText: true,
                         decoration: InputDecoration(
                           labelText: 'Password',
@@ -73,7 +74,7 @@ class RiderLoginPage extends StatelessWidget {
                         ),
                         style: TextStyle(fontSize: 14),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
                       ElevatedButton(
@@ -91,7 +92,9 @@ class RiderLoginPage extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, RiderRegisterPage.route);
+                    },
                     child: const Text('Don\'t have an account? Sign up.')),
               ],
             ),

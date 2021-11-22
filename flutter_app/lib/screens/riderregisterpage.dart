@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/brand_colors.dart';
+import 'package:flutter_app/screens/riderloginpage.dart';
 
 class RiderRegisterPage extends StatelessWidget {
+  const RiderRegisterPage({Key? key}) : super(key: key);
+  static String route = "rider-register";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +29,7 @@ class RiderRegisterPage extends StatelessWidget {
                   height: 40,
                 ),
                 Text(
-                  "Create an account with Jump Pacific",
+                  "Create a Jump account",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 20,
@@ -127,7 +131,9 @@ class RiderRegisterPage extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, RiderLoginPage.route);
+                    },
                     child: const Text('Already have an account? Log in.')),
               ],
             ),
